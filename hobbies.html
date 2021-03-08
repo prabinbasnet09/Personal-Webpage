@@ -1,0 +1,283 @@
+<html>
+	<head>
+	
+	<link rel="stylesheet" type="text/css" href="css/hobbies.css">
+	<style>
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color:white;
+    text-align: center;
+    padding: 20px 32px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 32px 32px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #333333;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+	* {box-sizing:border-box}
+
+.mySlides {display:none}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen  {
+  .prev, .next,.text {font-size: 11px}
+}
+	
+   </style>
+
+	</head>
+	
+	<body>
+	
+		<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="aboutme.html">About Me</a></li>
+   <li><a href="interest.html">Interests</a></li>
+   <li><a href="hobbies.html">Hobbies</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Works</a>
+    <div class="dropdown-content">
+      <a href="application form.html">Application Form</a> 
+      <a href="vpicture.html">Vpicture</a>
+      <a href="football.html">Football</a>
+	  <a href="lists.html">Lists</a>
+	  <a href="table.html">Table</a>
+    </div>
+  </li>
+<li><a href="#Contact Us">Contact Us</a></li>
+     </div>
+  </li>
+</ul>	
+		 <br> 
+  <br>
+
+	<div class="content">
+			<p align="center"><font color="white" size="5">My Hobbies are:</font></p>
+	</div>
+<br>
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="images/photo.jpg" style="width:100%">
+  <div class="text"><font size=6>Photography</font></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="images/guitar.jpg" style="width:100%">
+  <div class="text"><font size=6>Guitar</font></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="images/billards.jpg" style="width:100%">
+  <div class="text"><font size=6>Billiards</font></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="images/race.jpg" style="width:100%">
+  <div class="text"><font size=6>Auto racing</font></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="images/fish.jpg" style="width:100%">
+  <div class="text"><font size=6>Fishing</font></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="images/archery.jpg" style="width:100%">
+  <div class="text"><font size=6> Archery</font></div>
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)"><</a>
+<a class="next" onclick="plusSlides(1)">></a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="images/archery.jpg" style="width:100%">
+  <div class="text"><font size=6> Archery</font></div>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br>
+<br>
+<br>
+
+		<footer class="footer">
+			<p align="center"><font color="white">Created By: Prabin Basnet</font></p>
+			<p align="center"><font color="white" align="middle">Contact information:</font> <a href="www.gmail.com"><font color="white" align="middle">prabinbasnet09@gmail.com</a></p>
+		</footer>
+
+		</body>
+		</html>
+		
